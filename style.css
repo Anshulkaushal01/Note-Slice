@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #002efd, #ac00a6);
+    color: #fff;
+    padding-top: 4%;
+    padding-left: 10%;
+
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: row;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .container h1 {
+        font-size: 28px;
+    }
+
+    .container button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .input-box {
+        max-width: 100%;
+        padding: 15px;
+    }
+}
+
+.container h1 {
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.container h1 img {
+    width: 60px;
+}
+
+.container button img {
+    width: 25px;
+    margin-right: 8px;
+}
+
+.container button {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(#9418fd, #571094);
+    color: #fff;
+    font-size: 16px;
+    outline: 0;
+    box-shadow: 0px 0px 20px 0px rgb(252, 219, 255);
+    border-radius: 40px;
+    padding: 15px 25px;
+    margin: 30px 0 20px;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background: rgb(17, 37, 42);
+
+    color: rgb(0, 242, 255);
+
+    box-shadow: 0px 0px 15px 5px rgb(0, 238, 255);
+
+    transform: scale(1.1);
+
+    transition: all 0.3s ease-in-out;
+
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    min-width: 150px;
+    background: white;
+    box-shadow: 0px 0px 20px -5px rgb(255, 247, 247);
+    color: #333;
+    padding: 20px;
+    margin: 20px 0;
+    outline: none;
+    border-radius: 5px;
+}
+
+.input-box img {
+    width: 25px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.input-box {
+    animation: slideDown 0.3s ease-in-out;
+
+}
